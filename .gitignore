@@ -1,8 +1,25 @@
+# ROS2 Colcon Workspace
 build/
 install/
 log/
+
+# Python
 *.pyc
 __pycache__/
+*.egg-info/
+
+# Machine Learning / YOLO Weights
+*.pt
+*.weights
+*.onnx
+
+# ROS2 Bag Files (Data logs)
+*.db3
+*.mcap
+rosbag2_*/
+
+# IDEs and OS 
+.vscode/
+.idea/
 *.swp
 .DS_Store
-.vscode/
