@@ -78,17 +78,37 @@ ros2 run opsg_core altitude_node
 ros2 node list
 ```
 
-**3. List all active communication topics:**
+**3. Get detailed information about a specific node:**
+```bash
+ros2 node info /altitude_node
+```
+
+**4. List all active communication topics:**
 ```bash
 ros2 topic list
 ```
 
-**4. View real-time data being published to a topic:**
+**5. Get detailed information about a specific topic:**
+```bash
+ros2 topic info /drone_altitude
+```
+
+**6. View real-time data being published to a topic:**
 ```bash
 ros2 topic echo /drone_altitude
 ```
 
-**5. Publish data to a topic manually:**
+**7. Publish data to a topic manually:**
 ```bash
 ros2 topic pub /target_altitude std_msgs/msg/Float32 "{data: 15.5}"
+```
+
+**8. Check the publishing rate (Hz) of a topic:**
+```bash
+ros2 topic hz /drone_altitude
+```
+
+**9. Inspect the structure of a message type:**
+```bash
+ros2 interface show std_msgs/msg/Float32
 ```
