@@ -35,10 +35,10 @@ nidar_ws/
 * **Task 1 - Create ROS2 workspace and packages**
   * ✅ Create workspace (`nidar_ws`)
   * ✅ Create Python ROS2 package
-  * ⬜ Run a simple node
+  * ✅ Run a simple node
 
 * **Task 2 - Publishers and Subscribers**
-  * ⬜ 1 publisher (Publish `/drone_altitude`)
+  * ✅ 1 publisher (Publish `/drone_altitude`)
   * ⬜ 1 subscriber (Subscribe `/target_altitude`)
   * ⬜ Message exchange working
 
@@ -63,3 +63,9 @@ This repository adheres to the **Conventional Commits** standard to maintain a c
 * **`perf:`** A code change that improves performance.
 * **`build:`** Changes that affect the build system or external dependencies.
 * **`ci:`** Changes to CI/CD configuration files and scripts.
+
+## Testing & Debugging
+While the final system will utilize comprehensive launch files, individual nodes can be tested for debugging purposes using standard `ros2 run` commands:
+```bash
+ros2 run opsg_core altitude_node
+```
