@@ -39,8 +39,8 @@ nidar_ws/
 
 * **Task 2 - Publishers and Subscribers**
   * ✅ 1 publisher (Publish `/drone_altitude`)
-  * ⬜ 1 subscriber (Subscribe `/target_altitude`)
-  * ⬜ Message exchange working
+  * ✅ 1 subscriber (Subscribe `/target_altitude`)
+  * ✅ Message exchange working
 
 * **Task 3 - Services and Clients**
   * ⬜ Working service request-response
