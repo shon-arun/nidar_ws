@@ -29,3 +29,23 @@ nidar_ws/
 2. Navigate to the workspace root: `cd nidar_ws`
 3. Build the packages: `colcon build`
 4. Source the environment: `source install/setup.bash`
+
+## ROS Task Progress Tracker (Week 0)
+
+* **Task 1 - Create ROS2 workspace and packages**
+  * ✅ Create workspace (`nidar_ws`)
+  * ✅ Create Python ROS2 package
+  * ⬜ Run a simple node
+
+* **Task 2 - Publishers and Subscribers**
+  * ⬜ 1 publisher (Publish `/drone_altitude`)
+  * ⬜ 1 subscriber (Subscribe `/target_altitude`)
+  * ⬜ Message exchange working
+
+* **Task 3 - Services and Clients**
+  * ⬜ Working service request-response
+
+* **Task 4 - ROS2 Launch Files**
+  * ⬜ Run publisher + subscriber using `ros2 launch drone_sim launch.py`
+  
+*(Further weeks will be tracked as the project progresses).*
