@@ -65,7 +65,25 @@ This repository adheres to the **Conventional Commits** standard to maintain a c
 * **`ci:`** Changes to CI/CD configuration files and scripts.
 
 ## Testing & Debugging
-While the final system will utilize comprehensive launch files, individual nodes can be tested for debugging purposes using standard `ros2 run` commands:
+
+While the final system will utilize comprehensive launch files, individual nodes and communication streams can be tested using standard ROS2 CLI commands.
+
+**1. Run an individual node:**
 ```bash
 ros2 run opsg_core altitude_node
+```
+
+**2. List all currently running nodes:**
+```bash
+ros2 node list
+```
+
+**3. List all active communication topics:**
+```bash
+ros2 topic list
+```
+
+**4. View real-time data being published to a topic:**
+```bash
+ros2 topic echo /drone_altitude
 ```
