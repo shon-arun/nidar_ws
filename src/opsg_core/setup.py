@@ -25,7 +25,8 @@ setup(
     entry_points={
         'console_scripts': [
             'altitude_node = opsg_core.altitude_publisher:main',
-            'target_node = opsg_core.target_subscriber:main'
+            'target_node = opsg_core.target_subscriber:main',
+            'arm_node = opsg_core.arm_service:main'
         ],
     },
 )
