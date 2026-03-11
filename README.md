@@ -43,10 +43,10 @@ nidar_ws/
   * ✅ Message exchange working
 
 * **Task 3 - Services and Clients**
-  * ⬜ Working service request-response
+  * ✅ Working service request-response
 
 * **Task 4 - ROS2 Launch Files**
-  * ⬜ Run publisher + subscriber using `ros2 launch drone_sim launch.py`
+  * ✅ Run publisher + subscriber using `ros2 launch drone_sim launch.py`
   
 *(Further weeks will be tracked as the project progresses).*
 
@@ -111,4 +111,17 @@ ros2 topic hz /drone_altitude
 **9. Inspect the structure of a message type:**
 ```bash
 ros2 interface show std_msgs/msg/Float32
+```
+
+**10. List all active services:**
+```bash
+ros2 service list
+```
+
+**11. Call a service manually from the terminal:**
+```bash
+ros2 service call /arm_drone std_srvs/srv/SetBool "{data: true}"
+```
+```bash
+ros2 service call /arm_drone std_srvs/srv/SetBool "{data: false}"
 ```
