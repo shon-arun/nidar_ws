@@ -8,10 +8,21 @@ The mission utilizes a multi-robot system consisting of two specialized vehicles
 * **Scout Drone:** Engineered to autonomously scan a 30-hectare area, utilize YOLO for human detection, geotag survivors, and stream real-time video.
 * **Delivery Drone:** Designed to receive coordinates and autonomously navigate to drop up to ten 200g survival kits using a custom mechanical release system.
 
-## Repository Structure
-* `src/`: Contains all ROS2 packages for waypoint navigation, perception (YOLO), and multi-drone mission autonomy.
-* `cad/`: Contains the frame architectures, payload release mechanisms, and manufacturing drawings.
-* `docs/`: Contains mission requirement analysis, electronics wiring diagrams, and component justifications.
+## Workspace Structure
+
+```text
+nidar_ws/
+├── cad/                 # Frame architectures, payload release mechanisms, and drawings
+├── docs/                # Mission requirement analysis and electronics wiring diagrams
+├── src/                 # ROS2 workspace source directory
+│   ├── opsg_core/       # Core flight control, waypoint navigation, and basic ROS2 communication
+│   ├── opsg_perception/ # Camera sensor integration, cv_bridge conversions, and YOLO human detection
+│   ├── opsg_mission/    # High-level multi-drone spawning, autonomous workflow, and independent control
+│   ├── opsg_interfaces/ # Custom ROS2 messages, services, and actions for inter-drone communication
+│   └── opsg_description/# URDF models, 3D meshes, and Gazebo simulation environments
+├── .gitignore           # Git ignore configurations
+└── README.md            # Project documentation
+```
 
 ## Build Instructions
 1. Clone this repository.
