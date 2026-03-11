@@ -49,3 +49,17 @@ nidar_ws/
   * ⬜ Run publisher + subscriber using `ros2 launch drone_sim launch.py`
   
 *(Further weeks will be tracked as the project progresses).*
+
+## Development Standards: Conventional Commits
+This repository adheres to the **Conventional Commits** standard to maintain a clean, readable, and machine-parsable version history. Commits should use the following prefixes:
+
+* **`feat:`** A new feature (e.g., adding a new ROS node or CAD assembly).
+* **`fix:`** A bug fix (e.g., correcting a typo in a launch file).
+* **`docs:`** Documentation-only changes (e.g., updating this README).
+* **`chore:`** Routine tasks, maintenance, or configuration changes that don't modify the source code.
+* **`refactor:`** A code change that neither fixes a bug nor adds a feature.
+* **`style:`** Changes that do not affect the meaning of the code (formatting, white-space, etc.).
+* **`test:`** Adding missing tests or correcting existing tests.
+* **`perf:`** A code change that improves performance.
+* **`build:`** Changes that affect the build system or external dependencies.
+* **`ci:`** Changes to CI/CD configuration files and scripts.
