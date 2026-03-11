@@ -87,3 +87,8 @@ ros2 topic list
 ```bash
 ros2 topic echo /drone_altitude
 ```
+
+**5. Publish data to a topic manually:**
+```bash
+ros2 topic pub /target_altitude std_msgs/msg/Float32 "{data: 15.5}"
+```
