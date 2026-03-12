@@ -142,3 +142,14 @@ ros2 service call /arm_drone std_srvs/srv/SetBool "{data: true}"
 ```bash
 ros2 service call /arm_drone std_srvs/srv/SetBool "{data: false}"
 ```
+
+**12. Launching a launch file:**
+```bash
+ros2 launch opsg_description spawn_scout.launch.py
+```
+**Gazebo Harmonic SQLite Crash (`libspatialite.so.8: undefined symbol: sqlite3_enable_load_extension`)**
+If Gazebo instantly crashes on launch with this error, it means a local Python environment (like Conda) is overriding the system's SQLite library. 
+**Fix:** Force the system library to load first by prepending `LD_PRELOAD` to your launch command:
+```bash
+LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libsqlite3.so.0 ros2 launch opsg_description spawn_scout.launch.py
+```
