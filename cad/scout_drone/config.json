@@ -1,0 +1,11 @@
+{
+    "documentId": "bce38343faae9ef42bb2c3e9",
+    "versionId": "",
+    "workspaceId": "eb2077960dc8d126b9fa13c8",
+    "drawFrames": true,
+    "drawCollisions": true,
+    "useFixedLinks": true,
+    "assemblyName": "Assembly 1",
+    "outputFormat": "urdf",
+    "color": [0.2, 0.2, 0.2, 1.0]
+}
