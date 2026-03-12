@@ -1,0 +1,653 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: bce38343faae9ef42bb2c3e9 / workspace_id: eb2077960dc8d126b9fa13c8 -->
+<robot name="cad">
+  <!-- Link bottom_plate -->
+  <link name="bottom_plate">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+  </link>
+  <!-- Link bottom_plate_standoff -->
+  <link name="bottom_plate_standoff">
+    <inertial>
+      <origin xyz="0.0737028 -0.0142844 0.019" rpy="0 0 0"/>
+      <mass value="0.00159043"/>
+      <inertia ixx="1.21767e-07" ixy="0" ixz="0" iyy="1.21767e-07" iyz="0" izz="4.97e-09"/>
+    </inertial>
+    <!-- Part standoff -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+      <material name="standoff_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_standoff -->
+  <joint name="bottom_plate_standoff_fixed" type="fixed">
+    <origin xyz="-0.0487028 0.0107156 0.038" rpy="3.14159 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_standoff"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_landing_skid -->
+  <link name="bottom_plate_landing_skid">
+    <inertial>
+      <origin xyz="-0.12 -0.2 -0.00478826" rpy="0 0 0"/>
+      <mass value="0.00185269"/>
+      <inertia ixx="3.9565e-08" ixy="0" ixz="0" iyy="3.9565e-08" iyz="0" izz="5.0334e-08"/>
+    </inertial>
+    <!-- Part landing_skid -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/landing_skid.stl"/>
+      </geometry>
+      <material name="landing_skid_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/landing_skid.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_landing_skid -->
+  <joint name="bottom_plate_landing_skid_fixed" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_landing_skid"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_standoff_2 -->
+  <link name="bottom_plate_standoff_2">
+    <inertial>
+      <origin xyz="0.0737028 -0.0142844 0.019" rpy="0 0 0"/>
+      <mass value="0.00159043"/>
+      <inertia ixx="1.21767e-07" ixy="0" ixz="0" iyy="1.21767e-07" iyz="0" izz="4.97e-09"/>
+    </inertial>
+    <!-- Part standoff_2 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+      <material name="standoff_2_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_standoff_2 -->
+  <joint name="bottom_plate_standoff_2_fixed" type="fixed">
+    <origin xyz="-0.0987028 -0.0907156 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_standoff_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_motor -->
+  <link name="bottom_plate_motor">
+    <inertial>
+      <origin xyz="-0.12 -0.2 0.0128768" rpy="0 0 0"/>
+      <mass value="0.048"/>
+      <inertia ixx="3.58842e-06" ixy="0" ixz="0" iyy="3.58842e-06" iyz="0" izz="4.64668e-06"/>
+    </inertial>
+    <!-- Part motor -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor.stl"/>
+      </geometry>
+      <material name="motor_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_motor -->
+  <joint name="bottom_plate_motor_fixed" type="fixed">
+    <origin xyz="0.24 -0 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_motor"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_motor_2 -->
+  <link name="bottom_plate_motor_2">
+    <inertial>
+      <origin xyz="-0.12 -0.2 0.0128768" rpy="0 0 0"/>
+      <mass value="0.048"/>
+      <inertia ixx="3.58842e-06" ixy="0" ixz="0" iyy="3.58842e-06" iyz="0" izz="4.64668e-06"/>
+    </inertial>
+    <!-- Part motor_2 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor.stl"/>
+      </geometry>
+      <material name="motor_2_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_motor_2 -->
+  <joint name="bottom_plate_motor_2_fixed" type="fixed">
+    <origin xyz="0.28 0.29 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_motor_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_landing_skid_2 -->
+  <link name="bottom_plate_landing_skid_2">
+    <inertial>
+      <origin xyz="-0.12 -0.2 -0.00478826" rpy="0 0 0"/>
+      <mass value="0.00185269"/>
+      <inertia ixx="3.9565e-08" ixy="0" ixz="0" iyy="3.9565e-08" iyz="0" izz="5.0334e-08"/>
+    </inertial>
+    <!-- Part landing_skid_2 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/landing_skid.stl"/>
+      </geometry>
+      <material name="landing_skid_2_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/landing_skid.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_landing_skid_2 -->
+  <joint name="bottom_plate_landing_skid_2_fixed" type="fixed">
+    <origin xyz="-0.04 0.29 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_landing_skid_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_landing_skid_3 -->
+  <link name="bottom_plate_landing_skid_3">
+    <inertial>
+      <origin xyz="-0.12 -0.2 -0.00478826" rpy="0 0 0"/>
+      <mass value="0.00185269"/>
+      <inertia ixx="3.9565e-08" ixy="0" ixz="0" iyy="3.9565e-08" iyz="0" izz="5.0334e-08"/>
+    </inertial>
+    <!-- Part landing_skid_3 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/landing_skid.stl"/>
+      </geometry>
+      <material name="landing_skid_3_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/landing_skid.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_landing_skid_3 -->
+  <joint name="bottom_plate_landing_skid_3_fixed" type="fixed">
+    <origin xyz="0.28 0.29 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_landing_skid_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_motor_3 -->
+  <link name="bottom_plate_motor_3">
+    <inertial>
+      <origin xyz="-0.12 -0.2 0.0128768" rpy="0 0 0"/>
+      <mass value="0.048"/>
+      <inertia ixx="3.58842e-06" ixy="0" ixz="0" iyy="3.58842e-06" iyz="0" izz="4.64668e-06"/>
+    </inertial>
+    <!-- Part motor_3 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor.stl"/>
+      </geometry>
+      <material name="motor_3_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_motor_3 -->
+  <joint name="bottom_plate_motor_3_fixed" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_motor_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_raspberry_pi -->
+  <link name="bottom_plate_raspberry_pi">
+    <inertial>
+      <origin xyz="-0 -0.067 0.0139931" rpy="0 0 0"/>
+      <mass value="0.05"/>
+      <inertia ixx="1.92543e-05" ixy="0" ixz="0" iyy="1.47173e-05" iyz="0" izz="3.06415e-05"/>
+    </inertial>
+    <!-- Part raspberry_pi -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/raspberry_pi.stl"/>
+      </geometry>
+      <material name="raspberry_pi_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/raspberry_pi.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_raspberry_pi -->
+  <joint name="bottom_plate_raspberry_pi_fixed" type="fixed">
+    <origin xyz="0 0 0.002" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_raspberry_pi"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_standoff_3 -->
+  <link name="bottom_plate_standoff_3">
+    <inertial>
+      <origin xyz="0.0737028 -0.0142844 0.019" rpy="0 0 0"/>
+      <mass value="0.00159043"/>
+      <inertia ixx="1.21767e-07" ixy="0" ixz="0" iyy="1.21767e-07" iyz="0" izz="4.97e-09"/>
+    </inertial>
+    <!-- Part standoff_3 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+      <material name="standoff_3_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_standoff_3 -->
+  <joint name="bottom_plate_standoff_3_fixed" type="fixed">
+    <origin xyz="-0.0987028 -0.0107156 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_standoff_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_landing_skid_4 -->
+  <link name="bottom_plate_landing_skid_4">
+    <inertial>
+      <origin xyz="-0.12 -0.2 -0.00478826" rpy="0 0 0"/>
+      <mass value="0.00185269"/>
+      <inertia ixx="3.9565e-08" ixy="0" ixz="0" iyy="3.9565e-08" iyz="0" izz="5.0334e-08"/>
+    </inertial>
+    <!-- Part landing_skid_4 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/landing_skid.stl"/>
+      </geometry>
+      <material name="landing_skid_4_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/landing_skid.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_landing_skid_4 -->
+  <joint name="bottom_plate_landing_skid_4_fixed" type="fixed">
+    <origin xyz="0.24 0 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_landing_skid_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_battery -->
+  <link name="bottom_plate_battery">
+    <inertial>
+      <origin xyz="0 -0.045 0.047" rpy="0 0 0"/>
+      <mass value="0.55"/>
+      <inertia ixx="0.000384901" ixy="0" ixz="0" iyy="8.97434e-05" iyz="0" izz="0.000438789"/>
+    </inertial>
+    <!-- Part battery -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/battery.stl"/>
+      </geometry>
+      <material name="battery_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/battery.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_battery -->
+  <joint name="bottom_plate_battery_fixed" type="fixed">
+    <origin xyz="0 -0.000895923 -0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_battery"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_standoff_4 -->
+  <link name="bottom_plate_standoff_4">
+    <inertial>
+      <origin xyz="0.0737028 -0.0142844 0.019" rpy="0 0 0"/>
+      <mass value="0.00159043"/>
+      <inertia ixx="1.21767e-07" ixy="0" ixz="0" iyy="1.21767e-07" iyz="0" izz="4.97e-09"/>
+    </inertial>
+    <!-- Part standoff_4 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+      <material name="standoff_4_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_standoff_4 -->
+  <joint name="bottom_plate_standoff_4_fixed" type="fixed">
+    <origin xyz="-0.0987028 0.0392844 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_standoff_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_standoff_5 -->
+  <link name="bottom_plate_standoff_5">
+    <inertial>
+      <origin xyz="0.0737028 -0.0142844 0.019" rpy="0 0 0"/>
+      <mass value="0.00159043"/>
+      <inertia ixx="1.21767e-07" ixy="0" ixz="0" iyy="1.21767e-07" iyz="0" izz="4.97e-09"/>
+    </inertial>
+    <!-- Part standoff_5 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+      <material name="standoff_5_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_standoff_5 -->
+  <joint name="bottom_plate_standoff_5_fixed" type="fixed">
+    <origin xyz="-0.0487028 -0.0107156 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_standoff_5"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_top_plate -->
+  <link name="bottom_plate_top_plate">
+    <inertial>
+      <origin xyz="-0 -0.0398959 0.0355" rpy="0 0 0"/>
+      <mass value="0.0389431"/>
+      <inertia ixx="6.2093e-05" ixy="0" ixz="0" iyy="1.18301e-05" iyz="0" izz="7.38647e-05"/>
+    </inertial>
+    <!-- Part top_plate -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/top_plate.stl"/>
+      </geometry>
+      <material name="top_plate_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/top_plate.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_top_plate -->
+  <joint name="bottom_plate_top_plate_fixed" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_top_plate"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_motor_4 -->
+  <link name="bottom_plate_motor_4">
+    <inertial>
+      <origin xyz="-0.12 -0.2 0.0128768" rpy="0 0 0"/>
+      <mass value="0.048"/>
+      <inertia ixx="3.58842e-06" ixy="0" ixz="0" iyy="3.58842e-06" iyz="0" izz="4.64668e-06"/>
+    </inertial>
+    <!-- Part motor_4 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor.stl"/>
+      </geometry>
+      <material name="motor_4_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/motor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_motor_4 -->
+  <joint name="bottom_plate_motor_4_fixed" type="fixed">
+    <origin xyz="-0.04 0.29 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_motor_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_flight_controller -->
+  <link name="bottom_plate_flight_controller">
+    <inertial>
+      <origin xyz="0 -0 0.0114719" rpy="0 0 0"/>
+      <mass value="0.018"/>
+      <inertia ixx="2.28206e-06" ixy="0" ixz="0" iyy="2.28206e-06" iyz="0" izz="3.88657e-06"/>
+    </inertial>
+    <!-- Part flight_controller -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/flight_controller.stl"/>
+      </geometry>
+      <material name="flight_controller_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/flight_controller.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_flight_controller -->
+  <joint name="bottom_plate_flight_controller_fixed" type="fixed">
+    <origin xyz="0 0 0.002" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_flight_controller"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_camera_bracket -->
+  <link name="bottom_plate_camera_bracket">
+    <inertial>
+      <origin xyz="0 0.024 0.0153578" rpy="0 0 0"/>
+      <mass value="0.00429813"/>
+      <inertia ixx="3.31508e-07" ixy="0" ixz="0" iyy="4.63606e-07" iyz="0" izz="2.32697e-07"/>
+    </inertial>
+    <!-- Part camera_bracket -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/camera_bracket.stl"/>
+      </geometry>
+      <material name="camera_bracket_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/camera_bracket.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_camera_bracket -->
+  <joint name="bottom_plate_camera_bracket_fixed" type="fixed">
+    <origin xyz="0 -0 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_camera_bracket"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_standoff_6 -->
+  <link name="bottom_plate_standoff_6">
+    <inertial>
+      <origin xyz="0.0737028 -0.0142844 0.019" rpy="0 0 0"/>
+      <mass value="0.00159043"/>
+      <inertia ixx="1.21767e-07" ixy="0" ixz="0" iyy="1.21767e-07" iyz="0" izz="4.97e-09"/>
+    </inertial>
+    <!-- Part standoff_6 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+      <material name="standoff_6_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/standoff.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_standoff_6 -->
+  <joint name="bottom_plate_standoff_6_fixed" type="fixed">
+    <origin xyz="-0.0487028 -0.0907156 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_standoff_6"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bottom_plate_bottom_plate -->
+  <link name="bottom_plate_bottom_plate">
+    <inertial>
+      <origin xyz="0 -0.0429672 0.002" rpy="0 0 0"/>
+      <mass value="0.129514"/>
+      <inertia ixx="0.00120651" ixy="0" ixz="0" iyy="0.000922501" iyz="0" izz="0.00212867"/>
+    </inertial>
+    <!-- Part bottom_plate -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom_plate.stl"/>
+      </geometry>
+      <material name="bottom_plate_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom_plate.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from bottom_plate to bottom_plate_bottom_plate -->
+  <joint name="bottom_plate_bottom_plate_fixed" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="bottom_plate_bottom_plate"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+</robot>
