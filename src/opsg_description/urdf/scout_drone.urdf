@@ -2,6 +2,13 @@
 <!-- Generated using onshape-to-robot -->
 <!-- Onshape document_id: bce38343faae9ef42bb2c3e9 / workspace_id: eb2077960dc8d126b9fa13c8 -->
 <robot name="scout_drone">
+  <!-- Base Link -->
+  <link name="base_link"></link>
+  <joint name="base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="bottom_plate"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
   <!-- Link bottom_plate -->
   <link name="bottom_plate">
     <inertial>
