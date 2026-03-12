@@ -32,7 +32,7 @@
         <mesh filename="package://assets/propeller.stl"/>
       </geometry>
       <material name="propeller_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.498039 0.498039 0.498039 1"/>
       </material>
     </visual>
     <collision>
@@ -80,7 +80,7 @@
         <mesh filename="package://assets/propeller.stl"/>
       </geometry>
       <material name="propeller_2_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.498039 0.498039 0.498039 1"/>
       </material>
     </visual>
     <collision>
@@ -128,7 +128,7 @@
         <mesh filename="package://assets/propeller.stl"/>
       </geometry>
       <material name="propeller_3_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.498039 0.498039 0.498039 1"/>
       </material>
     </visual>
     <collision>
@@ -176,7 +176,7 @@
         <mesh filename="package://assets/propeller.stl"/>
       </geometry>
       <material name="propeller_4_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.498039 0.498039 0.498039 1"/>
       </material>
     </visual>
     <collision>
@@ -216,7 +216,7 @@
         <mesh filename="package://assets/standoff.stl"/>
       </geometry>
       <material name="standoff_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.811765 0.858824 0.898039 1"/>
       </material>
     </visual>
     <collision>
@@ -248,7 +248,7 @@
         <mesh filename="package://assets/landing_skid.stl"/>
       </geometry>
       <material name="landing_skid_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0 0 0 1"/>
       </material>
     </visual>
     <collision>
@@ -280,7 +280,7 @@
         <mesh filename="package://assets/standoff.stl"/>
       </geometry>
       <material name="standoff_2_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.811765 0.858824 0.898039 1"/>
       </material>
     </visual>
     <collision>
@@ -312,7 +312,7 @@
         <mesh filename="package://assets/motor.stl"/>
       </geometry>
       <material name="motor_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
       </material>
     </visual>
     <collision>
@@ -344,7 +344,7 @@
         <mesh filename="package://assets/motor.stl"/>
       </geometry>
       <material name="motor_2_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
       </material>
     </visual>
     <collision>
@@ -376,7 +376,7 @@
         <mesh filename="package://assets/landing_skid.stl"/>
       </geometry>
       <material name="landing_skid_2_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0 0 0 1"/>
       </material>
     </visual>
     <collision>
@@ -408,7 +408,7 @@
         <mesh filename="package://assets/landing_skid.stl"/>
       </geometry>
       <material name="landing_skid_3_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0 0 0 1"/>
       </material>
     </visual>
     <collision>
@@ -440,7 +440,7 @@
         <mesh filename="package://assets/motor.stl"/>
       </geometry>
       <material name="motor_3_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
       </material>
     </visual>
     <collision>
@@ -472,7 +472,7 @@
         <mesh filename="package://assets/raspberry_pi.stl"/>
       </geometry>
       <material name="raspberry_pi_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.372549 0.654902 0.239216 1"/>
       </material>
     </visual>
     <collision>
@@ -504,7 +504,7 @@
         <mesh filename="package://assets/standoff.stl"/>
       </geometry>
       <material name="standoff_3_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.811765 0.858824 0.898039 1"/>
       </material>
     </visual>
     <collision>
@@ -536,7 +536,7 @@
         <mesh filename="package://assets/landing_skid.stl"/>
       </geometry>
       <material name="landing_skid_4_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0 0 0 1"/>
       </material>
     </visual>
     <collision>
@@ -568,7 +568,7 @@
         <mesh filename="package://assets/battery.stl"/>
       </geometry>
       <material name="battery_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
       </material>
     </visual>
     <collision>
@@ -600,7 +600,7 @@
         <mesh filename="package://assets/standoff.stl"/>
       </geometry>
       <material name="standoff_4_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.811765 0.858824 0.898039 1"/>
       </material>
     </visual>
     <collision>
@@ -632,7 +632,7 @@
         <mesh filename="package://assets/standoff.stl"/>
       </geometry>
       <material name="standoff_5_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.811765 0.858824 0.898039 1"/>
       </material>
     </visual>
     <collision>
@@ -664,7 +664,7 @@
         <mesh filename="package://assets/top_plate.stl"/>
       </geometry>
       <material name="top_plate_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.439216 0.47451 0.501961 1"/>
       </material>
     </visual>
     <collision>
@@ -696,7 +696,7 @@
         <mesh filename="package://assets/motor.stl"/>
       </geometry>
       <material name="motor_4_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
       </material>
     </visual>
     <collision>
@@ -728,7 +728,7 @@
         <mesh filename="package://assets/flight_controller.stl"/>
       </geometry>
       <material name="flight_controller_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.615686 0.811765 0.929412 1"/>
       </material>
     </visual>
     <collision>
@@ -760,7 +760,7 @@
         <mesh filename="package://assets/camera_bracket.stl"/>
       </geometry>
       <material name="camera_bracket_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.764706 0.545098 0.803922 1"/>
       </material>
     </visual>
     <collision>
@@ -792,7 +792,7 @@
         <mesh filename="package://assets/standoff.stl"/>
       </geometry>
       <material name="standoff_6_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.811765 0.858824 0.898039 1"/>
       </material>
     </visual>
     <collision>
@@ -824,7 +824,7 @@
         <mesh filename="package://assets/bottom_plate.stl"/>
       </geometry>
       <material name="bottom_plate_material">
-        <color rgba="0.2 0.2 0.2 1"/>
+        <color rgba="0.439216 0.47451 0.501961 1"/>
       </material>
     </visual>
     <collision>
