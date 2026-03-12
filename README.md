@@ -13,6 +13,7 @@ The mission utilizes a multi-robot system consisting of two specialized vehicles
 ```text
 nidar_ws/
 ├── cad/                 # Frame architectures, payload release mechanisms, and drawings
+│   └── scout_drone/     # Onshape export configurations and staging for the scout drone
 ├── docs/                # Mission requirement analysis and electronics wiring diagrams
 ├── src/                 # ROS2 workspace source directory
 │   ├── opsg_core/       # Core flight control, waypoint navigation, and basic ROS2 communication
@@ -20,6 +21,8 @@ nidar_ws/
 │   ├── opsg_mission/    # High-level multi-drone spawning, autonomous workflow, and independent control
 │   ├── opsg_interfaces/ # Custom ROS2 messages, services, and actions for inter-drone communication
 │   └── opsg_description/# URDF models, 3D meshes, and Gazebo simulation environments
+│       ├── meshes/      # 3D mesh files (.stl) categorized by drone (e.g., scout_drone/)
+│       └── urdf/        # Unified Robot Description Format files (e.g., scout_drone.urdf)
 ├── .gitignore           # Git ignore configurations
 └── README.md            # Project documentation
 ```
