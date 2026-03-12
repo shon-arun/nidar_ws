@@ -33,7 +33,7 @@ nidar_ws/
 3. Build the packages: `colcon build`
 4. Source the environment: `source install/setup.bash`
 
-## ROS Task Progress Tracker (Week 0)
+## ROS Task Progress Tracker (Week 0, 1)
 
 * **Task 1 - Create ROS2 workspace and packages**
   * ✅ Create workspace (`nidar_ws`)
@@ -50,6 +50,20 @@ nidar_ws/
 
 * **Task 4 - ROS2 Launch Files**
   * ✅ Run publisher + subscriber using `ros2 launch drone_sim launch.py`
+
+* **Task 5 - Configure PX4 + Gazebo + ROS2 bridge**
+  * ⬜ drone visible in Gazebo
+  * ⬜ topics visible in ROS2
+
+* **Task 6 - Autonomous Takeoff and Landing**
+  Takeoff to
+  * ⬜ 2m
+  * ⬜ 5m
+  * ⬜ 10m
+
+* **Task 7 - Waypoint Navigation**
+  * ⬜ Waypoint control node
+  * ⬜ Trajectory following videos for square, triangle, figure 8
   
 *(Further weeks will be tracked as the project progresses).*
 
