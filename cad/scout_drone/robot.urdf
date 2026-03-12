@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <!-- Generated using onshape-to-robot -->
 <!-- Onshape document_id: bce38343faae9ef42bb2c3e9 / workspace_id: eb2077960dc8d126b9fa13c8 -->
-<robot name="cad">
+<robot name="scout_drone">
   <!-- Link bottom_plate -->
   <link name="bottom_plate">
     <inertial>
@@ -10,6 +10,198 @@
       <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
     </inertial>
   </link>
+  <!-- Link propeller -->
+  <link name="propeller">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+  </link>
+  <!-- Link propeller_propeller -->
+  <link name="propeller_propeller">
+    <inertial>
+      <origin xyz="-0.12 -0.2 0.023" rpy="0 0 0"/>
+      <mass value="0.009"/>
+      <inertia ixx="1.77852e-05" ixy="0" ixz="0" iyy="1.77852e-05" iyz="0" izz="3.55644e-05"/>
+    </inertial>
+    <!-- Part propeller -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/propeller.stl"/>
+      </geometry>
+      <material name="propeller_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/propeller.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from propeller to propeller_propeller -->
+  <joint name="propeller_propeller_fixed" type="fixed">
+    <origin xyz="0.12 -0.2 0.022" rpy="3.14159 -0 0"/>
+    <parent link="propeller"/>
+    <child link="propeller_propeller"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from bottom_plate to propeller -->
+  <joint name="prop1" type="revolute">
+    <origin xyz="-0.12 -0.2 0.022" rpy="3.14159 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="propeller"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link propeller_2 -->
+  <link name="propeller_2">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+  </link>
+  <!-- Link propeller_2_propeller_2 -->
+  <link name="propeller_2_propeller_2">
+    <inertial>
+      <origin xyz="-0.12 -0.2 0.023" rpy="0 0 0"/>
+      <mass value="0.009"/>
+      <inertia ixx="1.77852e-05" ixy="0" ixz="0" iyy="1.77852e-05" iyz="0" izz="3.55644e-05"/>
+    </inertial>
+    <!-- Part propeller_2 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/propeller.stl"/>
+      </geometry>
+      <material name="propeller_2_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/propeller.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from propeller_2 to propeller_2_propeller_2 -->
+  <joint name="propeller_2_propeller_2_fixed" type="fixed">
+    <origin xyz="0.12 -0.2 0.022" rpy="3.14159 -0 0"/>
+    <parent link="propeller_2"/>
+    <child link="propeller_2_propeller_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from bottom_plate to propeller_2 -->
+  <joint name="prop2" type="revolute">
+    <origin xyz="-0.16 0.09 0.022" rpy="3.14159 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="propeller_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link propeller_3 -->
+  <link name="propeller_3">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+  </link>
+  <!-- Link propeller_3_propeller_3 -->
+  <link name="propeller_3_propeller_3">
+    <inertial>
+      <origin xyz="-0.12 -0.2 0.023" rpy="0 0 0"/>
+      <mass value="0.009"/>
+      <inertia ixx="1.77852e-05" ixy="0" ixz="0" iyy="1.77852e-05" iyz="0" izz="3.55644e-05"/>
+    </inertial>
+    <!-- Part propeller_3 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/propeller.stl"/>
+      </geometry>
+      <material name="propeller_3_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/propeller.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from propeller_3 to propeller_3_propeller_3 -->
+  <joint name="propeller_3_propeller_3_fixed" type="fixed">
+    <origin xyz="0.12 -0.2 0.022" rpy="3.14159 -0 0"/>
+    <parent link="propeller_3"/>
+    <child link="propeller_3_propeller_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from bottom_plate to propeller_3 -->
+  <joint name="prop3" type="revolute">
+    <origin xyz="0.16 0.09 0.022" rpy="3.14159 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="propeller_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link propeller_4 -->
+  <link name="propeller_4">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+  </link>
+  <!-- Link propeller_4_propeller_4 -->
+  <link name="propeller_4_propeller_4">
+    <inertial>
+      <origin xyz="-0.12 -0.2 0.023" rpy="0 0 0"/>
+      <mass value="0.009"/>
+      <inertia ixx="1.77852e-05" ixy="0" ixz="0" iyy="1.77852e-05" iyz="0" izz="3.55644e-05"/>
+    </inertial>
+    <!-- Part propeller_4 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/propeller.stl"/>
+      </geometry>
+      <material name="propeller_4_material">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/propeller.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from propeller_4 to propeller_4_propeller_4 -->
+  <joint name="propeller_4_propeller_4_fixed" type="fixed">
+    <origin xyz="0.12 -0.2 0.022" rpy="3.14159 -0 0"/>
+    <parent link="propeller_4"/>
+    <child link="propeller_4_propeller_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from bottom_plate to propeller_4 -->
+  <joint name="prop4" type="revolute">
+    <origin xyz="0.12 -0.2 0.022" rpy="3.14159 -0 0"/>
+    <parent link="bottom_plate"/>
+    <child link="propeller_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
   <!-- Link bottom_plate_standoff -->
   <link name="bottom_plate_standoff">
     <inertial>
