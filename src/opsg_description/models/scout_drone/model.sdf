@@ -18,7 +18,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/battery.stl</uri>
+            <uri>model://scout_drone/meshes/battery.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -27,7 +27,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/bottom_plate.stl</uri>
+            <uri>model://scout_drone/meshes/bottom_plate.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -36,7 +36,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/camera_bracket.stl</uri>
+            <uri>model://scout_drone/meshes/camera_bracket.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -45,7 +45,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/flight_controller.stl</uri>
+            <uri>model://scout_drone/meshes/flight_controller.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -54,7 +54,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+            <uri>model://scout_drone/meshes/landing_skid.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -63,7 +63,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+            <uri>model://scout_drone/meshes/landing_skid.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -72,7 +72,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+            <uri>model://scout_drone/meshes/landing_skid.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -81,7 +81,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+            <uri>model://scout_drone/meshes/landing_skid.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -90,7 +90,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+            <uri>model://scout_drone/meshes/motor.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -99,7 +99,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+            <uri>model://scout_drone/meshes/motor.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -108,7 +108,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+            <uri>model://scout_drone/meshes/motor.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -117,7 +117,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+            <uri>model://scout_drone/meshes/motor.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -126,7 +126,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/raspberry_pi.stl</uri>
+            <uri>model://scout_drone/meshes/raspberry_pi.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -135,7 +135,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -144,7 +144,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -153,7 +153,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -162,7 +162,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -171,7 +171,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -180,7 +180,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -189,7 +189,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/top_plate.stl</uri>
+            <uri>model://scout_drone/meshes/top_plate.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -221,7 +221,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/battery.stl</uri>
+            <uri>model://scout_drone/meshes/battery.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -234,7 +234,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/bottom_plate.stl</uri>
+            <uri>model://scout_drone/meshes/bottom_plate.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -247,7 +247,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/camera_bracket.stl</uri>
+            <uri>model://scout_drone/meshes/camera_bracket.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -260,7 +260,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/flight_controller.stl</uri>
+            <uri>model://scout_drone/meshes/flight_controller.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -273,7 +273,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+            <uri>model://scout_drone/meshes/landing_skid.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -286,7 +286,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+            <uri>model://scout_drone/meshes/landing_skid.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -299,7 +299,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+            <uri>model://scout_drone/meshes/landing_skid.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -312,7 +312,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+            <uri>model://scout_drone/meshes/landing_skid.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -325,7 +325,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+            <uri>model://scout_drone/meshes/motor.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -338,7 +338,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+            <uri>model://scout_drone/meshes/motor.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -351,7 +351,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+            <uri>model://scout_drone/meshes/motor.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -364,7 +364,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+            <uri>model://scout_drone/meshes/motor.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -377,7 +377,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/raspberry_pi.stl</uri>
+            <uri>model://scout_drone/meshes/raspberry_pi.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -390,7 +390,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -403,7 +403,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -416,7 +416,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -429,7 +429,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -442,7 +442,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -455,7 +455,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+            <uri>model://scout_drone/meshes/standoff.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -468,7 +468,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/top_plate.stl</uri>
+            <uri>model://scout_drone/meshes/top_plate.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -514,7 +514,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+            <uri>model://scout_drone/meshes/propeller.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -523,7 +523,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+            <uri>model://scout_drone/meshes/propeller.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -569,7 +569,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+            <uri>model://scout_drone/meshes/propeller.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -578,7 +578,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+            <uri>model://scout_drone/meshes/propeller.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -624,7 +624,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+            <uri>model://scout_drone/meshes/propeller.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -633,7 +633,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+            <uri>model://scout_drone/meshes/propeller.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -679,7 +679,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+            <uri>model://scout_drone/meshes/propeller.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -688,7 +688,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+            <uri>model://scout_drone/meshes/propeller.stl</uri>
           </mesh>
         </geometry>
         <material>
