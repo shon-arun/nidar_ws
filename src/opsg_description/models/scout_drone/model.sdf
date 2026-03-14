@@ -197,6 +197,18 @@
       <sensor name="imu_sensor" type="imu">
         <always_on>1</always_on>
         <update_rate>250</update_rate>
+        <imu>
+          <angular_velocity>
+            <x><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></x>
+            <y><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></y>
+            <z><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></z>
+          </angular_velocity>
+          <linear_acceleration>
+            <x><noise type="gaussian"><mean>0</mean><stddev>0.001</stddev></noise></x>
+            <y><noise type="gaussian"><mean>0</mean><stddev>0.001</stddev></noise></y>
+            <z><noise type="gaussian"><mean>0</mean><stddev>0.001</stddev></noise></z>
+          </linear_acceleration>
+        </imu>
       </sensor>
       <sensor name="air_pressure_sensor" type="air_pressure">
         <always_on>1</always_on>
@@ -210,6 +222,11 @@
       <sensor name="magnetometer_sensor" type="magnetometer">
         <always_on>1</always_on>
         <update_rate>100</update_rate>
+        <magnetometer>
+          <x><noise type="gaussian"><mean>0</mean><stddev>0.001</stddev></noise></x>
+          <y><noise type="gaussian"><mean>0</mean><stddev>0.001</stddev></noise></y>
+          <z><noise type="gaussian"><mean>0</mean><stddev>0.001</stddev></noise></z>
+        </magnetometer>
       </sensor>
       <sensor name="navsat_sensor" type="navsat">
         <always_on>1</always_on>
