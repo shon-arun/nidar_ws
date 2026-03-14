@@ -1,0 +1,828 @@
+<sdf version='1.11'>
+  <model name='scout_drone'>
+    <link name='base_link'>
+      <inertial>
+        <pose>1.8030115616135401e-18 -0.046923383509009348 0.031226937420096731 0 0 0</pose>
+        <mass>0.99970857100000043</mass>
+        <inertia>
+          <ixx>0.0063531125505880762</ixx>
+          <ixy>2.0046676044582369e-12</ixy>
+          <ixz>1.5071261333954691e-12</ixz>
+          <iyy>0.0053931892405970159</iyy>
+          <iyz>-1.9786113701677129e-05</iyz>
+          <izz>0.01100935087599106</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_battery_collision'>
+        <pose>0 -0.00089592299999999997 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/battery.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_bottom_plate_collision_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/bottom_plate.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_camera_bracket_collision_2'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/camera_bracket.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_flight_controller_collision_3'>
+        <pose>0 0 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/flight_controller.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_landing_skid_2_collision_4'>
+        <pose>-0.040000000000000001 0.28999999999999998 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_landing_skid_3_collision_5'>
+        <pose>0.28000000000000003 0.28999999999999998 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_landing_skid_4_collision_6'>
+        <pose>0.23999999999999999 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_landing_skid_collision_7'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_motor_2_collision_8'>
+        <pose>0.28000000000000003 0.28999999999999998 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_motor_3_collision_9'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_motor_4_collision_10'>
+        <pose>-0.040000000000000001 0.28999999999999998 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_motor_collision_11'>
+        <pose>0.23999999999999999 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_raspberry_pi_collision_12'>
+        <pose>0 0 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/raspberry_pi.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_standoff_2_collision_13'>
+        <pose>-0.098702799999999993 -0.090715599999999993 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_standoff_3_collision_14'>
+        <pose>-0.098702799999999993 -0.0107156 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_standoff_4_collision_15'>
+        <pose>-0.098702799999999993 0.039284399999999997 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_standoff_5_collision_16'>
+        <pose>-0.048702799999999997 -0.0107156 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_standoff_6_collision_17'>
+        <pose>-0.048702799999999997 -0.090715599999999993 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_standoff_collision_18'>
+        <pose>-0.048702799999999997 0.0107156 0.037999999999999999 3.1415899999999999 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bottom_plate_top_plate_collision_19'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/top_plate.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_battery_visual'>
+        <pose>0 -0.00089592299999999997 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/battery.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 0.892156243 0.00490196235 1</diffuse>
+          <ambient>1 0.892156243 0.00490196235 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_bottom_plate_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/bottom_plate.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.549019992 0.593137503 0.627451241 1</diffuse>
+          <ambient>0.549019992 0.593137503 0.627451241 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_camera_bracket_visual_2'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/camera_bracket.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.955882549 0.681372523 1 1</diffuse>
+          <ambient>0.955882549 0.681372523 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_flight_controller_visual_3'>
+        <pose>0 0 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/flight_controller.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.769607484 1 1 1</diffuse>
+          <ambient>0.769607484 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_landing_skid_2_visual_4'>
+        <pose>-0.040000000000000001 0.28999999999999998 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_landing_skid_3_visual_5'>
+        <pose>0.28000000000000003 0.28999999999999998 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_landing_skid_4_visual_6'>
+        <pose>0.23999999999999999 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_landing_skid_visual_7'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/landing_skid.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_motor_2_visual_8'>
+        <pose>0.28000000000000003 0.28999999999999998 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 0.661764979 0.00490196235 1</diffuse>
+          <ambient>1 0.661764979 0.00490196235 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_motor_3_visual_9'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 0.661764979 0.00490196235 1</diffuse>
+          <ambient>1 0.661764979 0.00490196235 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_motor_4_visual_10'>
+        <pose>-0.040000000000000001 0.28999999999999998 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 0.661764979 0.00490196235 1</diffuse>
+          <ambient>1 0.661764979 0.00490196235 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_motor_visual_11'>
+        <pose>0.23999999999999999 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/motor.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 0.661764979 0.00490196235 1</diffuse>
+          <ambient>1 0.661764979 0.00490196235 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_raspberry_pi_visual_12'>
+        <pose>0 0 0.002 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/raspberry_pi.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.465686262 0.818627477 0.299019992 1</diffuse>
+          <ambient>0.465686262 0.818627477 0.299019992 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_standoff_2_visual_13'>
+        <pose>-0.098702799999999993 -0.090715599999999993 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_standoff_3_visual_14'>
+        <pose>-0.098702799999999993 -0.0107156 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_standoff_4_visual_15'>
+        <pose>-0.098702799999999993 0.039284399999999997 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_standoff_5_visual_16'>
+        <pose>-0.048702799999999997 -0.0107156 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_standoff_6_visual_17'>
+        <pose>-0.048702799999999997 -0.090715599999999993 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_standoff_visual_18'>
+        <pose>-0.048702799999999997 0.0107156 0.037999999999999999 3.1415899999999999 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/standoff.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bottom_plate_top_plate_visual_19'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/top_plate.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.549019992 0.593137503 0.627451241 1</diffuse>
+          <ambient>0.549019992 0.593137503 0.627451241 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='prop1' type='revolute'>
+      <pose relative_to='base_link'>-0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+      <parent>base_link</parent>
+      <child>propeller</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3.1415926535897931</lower>
+          <upper>3.1415926535897931</upper>
+          <effort>10</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propeller'>
+      <pose relative_to='prop1'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 -6.1033262629174947e-08 -0.001000530606707627 0 0 0</pose>
+        <mass>0.0090000009999999988</mass>
+        <inertia>
+          <ixx>1.7786200001001219e-05</ixx>
+          <ixy>2.7105054312137611e-20</ixy>
+          <ixz>0</ixz>
+          <iyy>1.7786200001126251e-05</iyy>
+          <iyz>4.717870359418704e-11</iyz>
+          <izz>3.5565399999874873e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='propeller_propeller_collision'>
+        <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='propeller_propeller_visual'>
+        <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.622548759 0.622548759 0.622548759 1</diffuse>
+          <ambient>0.622548759 0.622548759 0.622548759 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='prop2' type='revolute'>
+      <pose relative_to='base_link'>-0.16 0.089999999999999997 0.021999999999999999 3.1415899999999999 0 0</pose>
+      <parent>base_link</parent>
+      <child>propeller_2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3.1415926535897931</lower>
+          <upper>3.1415926535897931</upper>
+          <effort>10</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propeller_2'>
+      <pose relative_to='prop2'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 -6.1033262629174947e-08 -0.001000530606707627 0 0 0</pose>
+        <mass>0.0090000009999999988</mass>
+        <inertia>
+          <ixx>1.7786200001001219e-05</ixx>
+          <ixy>2.7105054312137611e-20</ixy>
+          <ixz>0</ixz>
+          <iyy>1.7786200001126251e-05</iyy>
+          <iyz>4.717870359418704e-11</iyz>
+          <izz>3.5565399999874873e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='propeller_2_propeller_2_collision'>
+        <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='propeller_2_propeller_2_visual'>
+        <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.622548759 0.622548759 0.622548759 1</diffuse>
+          <ambient>0.622548759 0.622548759 0.622548759 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='prop3' type='revolute'>
+      <pose relative_to='base_link'>0.16 0.089999999999999997 0.021999999999999999 3.1415899999999999 0 0</pose>
+      <parent>base_link</parent>
+      <child>propeller_3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3.1415926535897931</lower>
+          <upper>3.1415926535897931</upper>
+          <effort>10</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propeller_3'>
+      <pose relative_to='prop3'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 -6.1033262629174947e-08 -0.001000530606707627 0 0 0</pose>
+        <mass>0.0090000009999999988</mass>
+        <inertia>
+          <ixx>1.7786200001001219e-05</ixx>
+          <ixy>2.7105054312137611e-20</ixy>
+          <ixz>0</ixz>
+          <iyy>1.7786200001126251e-05</iyy>
+          <iyz>4.717870359418704e-11</iyz>
+          <izz>3.5565399999874873e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='propeller_3_propeller_3_collision'>
+        <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='propeller_3_propeller_3_visual'>
+        <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.622548759 0.622548759 0.622548759 1</diffuse>
+          <ambient>0.622548759 0.622548759 0.622548759 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='prop4' type='revolute'>
+      <pose relative_to='base_link'>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+      <parent>base_link</parent>
+      <child>propeller_4</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3.1415926535897931</lower>
+          <upper>3.1415926535897931</upper>
+          <effort>10</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propeller_4'>
+      <pose relative_to='prop4'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 -6.1033262629174947e-08 -0.001000530606707627 0 0 0</pose>
+        <mass>0.0090000009999999988</mass>
+        <inertia>
+          <ixx>1.7786200001001219e-05</ixx>
+          <ixy>2.7105054312137611e-20</ixy>
+          <ixz>0</ixz>
+          <iyy>1.7786200001126251e-05</iyy>
+          <iyz>4.717870359418704e-11</iyz>
+          <izz>3.5565399999874873e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='propeller_4_propeller_4_collision'>
+        <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='propeller_4_propeller_4_visual'>
+        <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://opsg_description/meshes/scout_drone/propeller.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.622548759 0.622548759 0.622548759 1</diffuse>
+          <ambient>0.622548759 0.622548759 0.622548759 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <frame name='bottom_plate_battery_fixed' attached_to='bottom_plate'>
+      <pose>0 -0.00089592299999999997 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_battery' attached_to='bottom_plate_battery_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_bottom_plate_fixed' attached_to='bottom_plate'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_bottom_plate' attached_to='bottom_plate_bottom_plate_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_camera_bracket_fixed' attached_to='bottom_plate'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_camera_bracket' attached_to='bottom_plate_camera_bracket_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_flight_controller_fixed' attached_to='bottom_plate'>
+      <pose>0 0 0.002 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_flight_controller' attached_to='bottom_plate_flight_controller_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_landing_skid_2_fixed' attached_to='bottom_plate'>
+      <pose>-0.040000000000000001 0.28999999999999998 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_landing_skid_2' attached_to='bottom_plate_landing_skid_2_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_landing_skid_3_fixed' attached_to='bottom_plate'>
+      <pose>0.28000000000000003 0.28999999999999998 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_landing_skid_3' attached_to='bottom_plate_landing_skid_3_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_landing_skid_4_fixed' attached_to='bottom_plate'>
+      <pose>0.23999999999999999 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_landing_skid_4' attached_to='bottom_plate_landing_skid_4_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_landing_skid_fixed' attached_to='bottom_plate'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_landing_skid' attached_to='bottom_plate_landing_skid_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_motor_2_fixed' attached_to='bottom_plate'>
+      <pose>0.28000000000000003 0.28999999999999998 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_motor_2' attached_to='bottom_plate_motor_2_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_motor_3_fixed' attached_to='bottom_plate'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_motor_3' attached_to='bottom_plate_motor_3_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_motor_4_fixed' attached_to='bottom_plate'>
+      <pose>-0.040000000000000001 0.28999999999999998 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_motor_4' attached_to='bottom_plate_motor_4_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_motor_fixed' attached_to='bottom_plate'>
+      <pose>0.23999999999999999 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_motor' attached_to='bottom_plate_motor_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_raspberry_pi_fixed' attached_to='bottom_plate'>
+      <pose>0 0 0.002 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_raspberry_pi' attached_to='bottom_plate_raspberry_pi_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff_2_fixed' attached_to='bottom_plate'>
+      <pose>-0.098702799999999993 -0.090715599999999993 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff_2' attached_to='bottom_plate_standoff_2_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff_3_fixed' attached_to='bottom_plate'>
+      <pose>-0.098702799999999993 -0.0107156 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff_3' attached_to='bottom_plate_standoff_3_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff_4_fixed' attached_to='bottom_plate'>
+      <pose>-0.098702799999999993 0.039284399999999997 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff_4' attached_to='bottom_plate_standoff_4_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff_5_fixed' attached_to='bottom_plate'>
+      <pose>-0.048702799999999997 -0.0107156 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff_5' attached_to='bottom_plate_standoff_5_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff_6_fixed' attached_to='bottom_plate'>
+      <pose>-0.048702799999999997 -0.090715599999999993 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff_6' attached_to='bottom_plate_standoff_6_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff_fixed' attached_to='bottom_plate'>
+      <pose>-0.048702799999999997 0.0107156 0.037999999999999999 3.1415899999999999 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_standoff' attached_to='bottom_plate_standoff_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_top_plate_fixed' attached_to='bottom_plate'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate_top_plate' attached_to='bottom_plate_top_plate_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='base_joint' attached_to='base_link'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='bottom_plate' attached_to='base_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='propeller_propeller_fixed' attached_to='propeller'>
+      <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+    </frame>
+    <frame name='propeller_propeller' attached_to='propeller_propeller_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='propeller_2_propeller_2_fixed' attached_to='propeller_2'>
+      <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+    </frame>
+    <frame name='propeller_2_propeller_2' attached_to='propeller_2_propeller_2_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='propeller_3_propeller_3_fixed' attached_to='propeller_3'>
+      <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+    </frame>
+    <frame name='propeller_3_propeller_3' attached_to='propeller_3_propeller_3_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='propeller_4_propeller_4_fixed' attached_to='propeller_4'>
+      <pose>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+    </frame>
+    <frame name='propeller_4_propeller_4' attached_to='propeller_4_propeller_4_fixed'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+  </model>
+</sdf>
