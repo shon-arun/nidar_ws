@@ -495,16 +495,14 @@
       </visual>
     </link>
     <joint name='prop1' type='revolute'>
-      <pose relative_to='base_link'>-0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+      <pose relative_to='base_link'>-0.12 -0.20000000000000001 0.021999999999999999 0 0 0</pose>
       <parent>base_link</parent>
       <child>propeller</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-3.1415926535897931</lower>
-          <upper>3.1415926535897931</upper>
-          <effort>10</effort>
-          <velocity>10</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -550,16 +548,14 @@
       </visual>
     </link>
     <joint name='prop2' type='revolute'>
-      <pose relative_to='base_link'>-0.16 0.089999999999999997 0.021999999999999999 3.1415899999999999 0 0</pose>
+      <pose relative_to='base_link'>-0.16 0.089999999999999997 0.021999999999999999 0 0 0</pose>
       <parent>base_link</parent>
       <child>propeller_2</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-3.1415926535897931</lower>
-          <upper>3.1415926535897931</upper>
-          <effort>10</effort>
-          <velocity>10</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -605,16 +601,14 @@
       </visual>
     </link>
     <joint name='prop3' type='revolute'>
-      <pose relative_to='base_link'>0.16 0.089999999999999997 0.021999999999999999 3.1415899999999999 0 0</pose>
+      <pose relative_to='base_link'>0.16 0.089999999999999997 0.021999999999999999 0 0 0</pose>
       <parent>base_link</parent>
       <child>propeller_3</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-3.1415926535897931</lower>
-          <upper>3.1415926535897931</upper>
-          <effort>10</effort>
-          <velocity>10</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -660,16 +654,14 @@
       </visual>
     </link>
     <joint name='prop4' type='revolute'>
-      <pose relative_to='base_link'>0.12 -0.20000000000000001 0.021999999999999999 3.1415899999999999 0 0</pose>
+      <pose relative_to='base_link'>0.12 -0.20000000000000001 0.021999999999999999 0 0 0</pose>
       <parent>base_link</parent>
       <child>propeller_4</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-3.1415926535897931</lower>
-          <upper>3.1415926535897931</upper>
-          <effort>10</effort>
-          <velocity>10</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -874,7 +866,7 @@
       <maxRotVelocity>1000.0</maxRotVelocity>
       <motorConstant>8.54858e-06</motorConstant>
       <momentConstant>0.016</momentConstant>
-      <commandSubTopic>command/motor/speed</commandSubTopic>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>0</motorNumber>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
@@ -892,7 +884,7 @@
       <maxRotVelocity>1000.0</maxRotVelocity>
       <motorConstant>8.54858e-06</motorConstant>
       <momentConstant>0.016</momentConstant>
-      <commandSubTopic>command/motor/speed</commandSubTopic>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>1</motorNumber>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
@@ -910,7 +902,7 @@
       <maxRotVelocity>1000.0</maxRotVelocity>
       <motorConstant>8.54858e-06</motorConstant>
       <momentConstant>0.016</momentConstant>
-      <commandSubTopic>command/motor/speed</commandSubTopic>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>2</motorNumber>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
@@ -928,7 +920,7 @@
       <maxRotVelocity>1000.0</maxRotVelocity>
       <motorConstant>8.54858e-06</motorConstant>
       <momentConstant>0.016</momentConstant>
-      <commandSubTopic>command/motor/speed</commandSubTopic>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>3</motorNumber>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
