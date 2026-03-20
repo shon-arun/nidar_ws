@@ -53,7 +53,7 @@ nidar_ws/
 
 * **Task 5 - Configure PX4 + Gazebo + ROS2 bridge**
   * ✅ drone visible in Gazebo
-  * ⬜ topics visible in ROS2
+  * ✅ topics visible in ROS2
 
 * **Task 6 - Autonomous Takeoff and Landing**
   Takeoff to
