@@ -27,6 +27,47 @@ nidar_ws/
 └── README.md            # Project documentation
 ```
 
+## Prerequisites & Installation Dependencies
+
+Operation Sky Guardian relies on a modern, decoupled robotics stack. To replicate this environment, you must install the following core systems and dependencies.
+
+### 1. Operating System & Core Middleware
+* **Ubuntu Linux:** 24.04 LTS (Noble Numbat).
+* **ROS 2 (Jazzy Jalisco):** The core communication framework. 
+  * Follow the [Official ROS 2 Jazzy Installation Guide](https://docs.ros.org/en/jazzy/Installation.html).
+  * *Pro-tip:* Installing the `ros-jazzy-desktop` meta-package automatically bundles `colcon` and the necessary workspace build tools, saving you from manually installing `ros-dev-tools`.
+
+### 2. The Simulation Engine (Gazebo Harmonic)
+Gazebo renders the 3D meshes, calculates collision physics, and applies gravity and thrust.
+* Follow the [Official Gazebo Harmonic Installation Guide](https://gazebosim.org/docs/harmonic/install).
+* Install the ROS-Gazebo bridge to sync the simulation clock and environment:
+  ```bash
+  sudo apt install ros-jazzy-ros-gz
+  ```
+
+### 3. The Flight Stack (PX4 Autopilot)
+PX4 handles the drone's internal physics calculations, EKF (Estimator), and motor mixing.
+* Clone the [PX4-Autopilot](https://github.com/PX4/PX4-Autopilot) repository.
+* Run the included Ubuntu setup script to install necessary toolchains (ARM compilers, CMake, Python dependencies):
+  ```bash
+  bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
+  ```
+
+### 4. Inter-Process Communication (Micro XRCE-DDS)
+PX4 uses internal `uORB` messaging, while ROS 2 uses `DDS`. The Micro XRCE-DDS Agent acts as the real-time translation layer.
+* **Install the Agent globally:**
+  ```bash
+  git clone [https://github.com/eProsima/Micro-XRCE-DDS-Agent.git](https://github.com/eProsima/Micro-XRCE-DDS-Agent.git)
+  cd Micro-XRCE-DDS-Agent
+  mkdir build
+  cd build
+  cmake ..
+  make
+  sudo make install
+  sudo ldconfig /usr/local/lib/
+  ```
+* **The Autonomy Dictionary (`px4_msgs`):** While not required to fly manually in Gazebo, you must clone `px4_msgs` into your ROS 2 `src/` directory to write autonomous nodes. Ensure the branch matches your PX4 version, then run `colcon build` so ROS 2 can generate the translation headers.
+
 ## Build Instructions
 1. Clone this repository.
 2. Navigate to the workspace root: `cd nidar_ws`
