@@ -52,7 +52,7 @@ nidar_ws/
   * ✅ Run publisher + subscriber using `ros2 launch drone_sim launch.py`
 
 * **Task 5 - Configure PX4 + Gazebo + ROS2 bridge**
-  * ⬜ drone visible in Gazebo
+  * ✅ drone visible in Gazebo
   * ⬜ topics visible in ROS2
 
 * **Task 6 - Autonomous Takeoff and Landing**
