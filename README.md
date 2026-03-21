@@ -104,7 +104,7 @@ PX4 uses internal `uORB` messaging, while ROS 2 uses `DDS`. The Micro XRCE-DDS A
 
 * **Task 7 - Waypoint Navigation**
   * ✅ Waypoint control node
-  * ⬜ Trajectory following videos for square, triangle, figure 8
+  * ✅ Trajectory following videos for square, triangle, figure 8
   
 *(Further weeks will be tracked as the project progresses).*
 
