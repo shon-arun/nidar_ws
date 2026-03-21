@@ -29,7 +29,8 @@ setup(
         'console_scripts': [
             'altitude_node = opsg_core.altitude_publisher:main',
             'target_node = opsg_core.target_subscriber:main',
-            'arm_node = opsg_core.arm_service:main'
+            'arm_node = opsg_core.arm_service:main',
+            'waypoint_node = opsg_core.waypoint_node:main'
         ],
     },
 )
