@@ -74,7 +74,7 @@ PX4 uses internal `uORB` messaging, while ROS 2 uses `DDS`. The Micro XRCE-DDS A
 3. Build the packages: `colcon build`
 4. Source the environment: `source install/setup.bash`
 
-## ROS Task Progress Tracker (Week 0, 1)
+## ROS Task Progress Tracker (Week 0, 1, 2, 3)
 
 * **Task 1 - Create ROS2 workspace and packages**
   * ✅ Create workspace (`nidar_ws`)
@@ -105,6 +105,26 @@ PX4 uses internal `uORB` messaging, while ROS 2 uses `DDS`. The Micro XRCE-DDS A
 * **Task 7 - Waypoint Navigation**
   * ✅ Waypoint control node
   * ✅ Trajectory following videos for square, triangle, figure 8
+
+* **Task 8 - Camera Sensor Integration**
+  * ⬜ Subscribe to the `/camera/image_raw` topic
+  * ⬜ Convert the ROS image to OpenCV format using `cv_bridge`
+  * ⬜ Display the live feed using OpenCV (Deliverable: Camera stream visible)
+
+* **Task 9 - Human Detection (YOLO)**
+  * ⬜ Load a pretrained YOLO model to process the camera feed (`camera -> YOLO -> bounding boxes`)
+  * ⬜ Publish the results to a custom topic named `/human_detection`
+  * ⬜ Include `x`, `y`, and `confidence` values in the custom message
+
+* **Task 10 - Spawn Multiple Drones**
+  * ⬜ Spawn `drone_1` and `drone_2` in Gazebo
+  * ⬜ Implement ROS namespaces (`/drone1`, `/drone2`) to isolate their communication networks
+  * ⬜ Deliverable: Two drones simultaneously visible in the simulation
+
+* **Task 11 - Independent Drone Control**
+  * ⬜ Create a master node to control both drones independently
+  * ⬜ Send distinct commands (e.g., `drone1` acts as scout, `drone2` stays on standby)
+  * ⬜ Deliverable: Drones executing entirely different trajectories at the same time
   
 *(Further weeks will be tracked as the project progresses).*
 
