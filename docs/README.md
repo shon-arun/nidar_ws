@@ -44,3 +44,20 @@ To effectively map the 30-hectare area, the drone will execute an automated **la
 **Why this fits the mission(probably):**
 * **Motor (The Tornado T5 3115):** Scanning a 30-hectare area requires extended, stable flight times. The 3115 is a high-torque stator designed to effortlessly swing large 8 to 9-inch propellers. By pairing the 900KV variant with a 6S LiPo battery, the drone achieves exceptional grams-per-watt (g/W) efficiency at lower RPMs. 
 * **ESC (Hobbywing XRotor 60A):** A massive 3115 stator generates incredible torque, but it also pulls significant amperage. At 100% throttle, this motor can draw upwards of 55 Amps. The SpeedyBee 50A would bottleneck the motor and risk blowing a MOSFET. The Hobbywing XRotor 60A provides a safe 5A continuous headroom (with an 80A burst rating) over the motor's absolute maximum draw.
+
+### Propeller Selection
+**Selected Propeller: HQProp MacroQuad 9050 (9-inch diameter, 5.0 pitch)**
+
+* **Diameter & Pitch:** 9-inch diameter with a 5.0 pitch.
+* **Material:** Carbon-Reinforced Nylon.
+* **Thrust & Efficiency Reasoning:** The 9-inch propeller is the mathematical sweet spot for the Tornado T5 3115 (900KV) motor. A 7-inch prop would be under-propped and inefficient, while a 10-inch prop would over-draw current and risk burning out the 60A ESCs. The 9050 provides exceptional lift efficiency (~6.5 g/W at hover), maximizing flight time for the 30-hectare grid scan. The carbon-reinforced material ensures the blade remains stiff under heavy loads, preventing thrust loss from blade-flattening.
+
+### Core Electronics Components
+
+| Component | Example Model | Purpose + Specs Justification |
+| :--- | :--- | :--- |
+| **Flight Controller** | Holybro Pixhawk 6C | Native PX4 integration. Features triple-redundant IMUs and isolated vibration damping, which is critical for maintaining stable flight during autonomous ROS 2 waypoint navigation. |
+| **GPS Module(maybe)** | Holybro Micro M9N GPS | Utilizes the u-blox M9N receiver for concurrent reception of 4 GNSS systems. Provides highly accurate spatial data essential for precise lawnmower grid execution and geotagging detected humans. |
+| **Telemetry Module(Not sure)** | Holybro SiK Radio V3 (915MHz) | Provides a dedicated, long-range (up to 300mW) telemetry link to the QGroundControl base station (maybe), ensuring continuous heartbeat monitoring independent of the companion computer's network. |
+| **Onboard Computer** | Raspberry Pi 4 Model B (8GB) | Acts as the ROS 2 orchestrator. Handles the Micro XRCE-DDS bridge, interfaces directly with the lightweight Pi Cam V3 via MIPI, and processes the YOLO human detection models. |
+| **Power Module** | Holybro PM02 V3 | Acts as the Power Distribution Board (PDB). Safely steps down the 6S (22.2V) flight battery voltage to a clean 5V to continuously power the Pixhawk, GPS, and Raspberry Pi without browning out. |
