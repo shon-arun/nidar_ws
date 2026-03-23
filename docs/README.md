@@ -1,4 +1,4 @@
-### Camera Comparison Table
+## Camera Comparison Table
 
 | Camera Model | Sensor Size / MP | Shutter Type | Frame Rate | Weight (g) | Interface |
 | :--- | :--- | :--- | :---: | :---: | :--- |
@@ -21,7 +21,7 @@ To effectively map the 30-hectare area, the drone will execute an automated **la
 * **Flight Altitude:** ~50 meters. This ensures safe obstacle clearance, hopefully while maintaining a high-quality Ground Sample Distance (GSD).
 * **Image Overlap (Not final, to be decided):** The mission will be programmed with a **70% frontal and 60% side overlap**.
 
-### Motor Comparison Table
+## Motor Comparison Table
 
 | Motor Model | KV Rating | Propeller | Max Thrust | Max Current | Efficiency (Hover) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -45,14 +45,14 @@ To effectively map the 30-hectare area, the drone will execute an automated **la
 * **Motor (The Tornado T5 3115):** Scanning a 30-hectare area requires extended, stable flight times. The 3115 is a high-torque stator designed to effortlessly swing large 8 to 9-inch propellers. By pairing the 900KV variant with a 6S LiPo battery, the drone achieves exceptional grams-per-watt (g/W) efficiency at lower RPMs. 
 * **ESC (Hobbywing XRotor 60A):** A massive 3115 stator generates incredible torque, but it also pulls significant amperage. At 100% throttle, this motor can draw upwards of 55 Amps. The SpeedyBee 50A would bottleneck the motor and risk blowing a MOSFET. The Hobbywing XRotor 60A provides a safe 5A continuous headroom (with an 80A burst rating) over the motor's absolute maximum draw.
 
-### Propeller Selection
+## Propeller Selection
 **Selected Propeller: HQProp MacroQuad 9050 (9-inch diameter, 5.0 pitch)**
 
 * **Diameter & Pitch:** 9-inch diameter with a 5.0 pitch.
 * **Material:** Carbon-Reinforced Nylon.
 * **Thrust & Efficiency Reasoning:** The 9-inch propeller is the mathematical sweet spot for the Tornado T5 3115 (900KV) motor. A 7-inch prop would be under-propped and inefficient, while a 10-inch prop would over-draw current and risk burning out the 60A ESCs. The 9050 provides exceptional lift efficiency (~6.5 g/W at hover), maximizing flight time for the 30-hectare grid scan. The carbon-reinforced material ensures the blade remains stiff under heavy loads, preventing thrust loss from blade-flattening.
 
-### Core Electronics Components
+## Core Electronics Components
 
 | Component | Example Model | Purpose + Specs Justification |
 | :--- | :--- | :--- |
@@ -61,3 +61,17 @@ To effectively map the 30-hectare area, the drone will execute an automated **la
 | **Telemetry Module(Not sure)** | Holybro SiK Radio V3 (915MHz) | Provides a dedicated, long-range (up to 300mW) telemetry link to the QGroundControl base station (maybe), ensuring continuous heartbeat monitoring independent of the companion computer's network. |
 | **Onboard Computer** | Raspberry Pi 4 Model B (8GB) | Acts as the ROS 2 orchestrator. Handles the Micro XRCE-DDS bridge, interfaces directly with the lightweight Pi Cam V3 via MIPI, and processes the YOLO human detection models. |
 | **Power Module** | Holybro PM02 V3 | Acts as the Power Distribution Board (PDB). Safely steps down the 6S (22.2V) flight battery voltage to a clean 5V to continuously power the Pixhawk, GPS, and Raspberry Pi without browning out. |
+
+## Battery Specification
+**Selected Battery: Custom 6S2P 21700 Lithium-Ion Pack (Molicel P42A cells)**
+
+### Parameter Evaluation & Justification
+
+* **LiPo vs Li-Ion:** For a 30-hectare mapping mission, endurance is the primary metric. Lithium-Ion (Li-Ion) cells possess a significantly higher energy density (Watt-hours per kilogram) compared to Lithium Polymer (LiPo) cells. 
+* **Cell Configuration (6S / 22.2V):** A 6-cell series (6S) configuration provides a nominal voltage of 22.2V. This is mathematically paired with our Tornado T5 3115 (900KV) motors. Running a low-KV motor at a higher voltage is the standard engineering practice to achieve maximum efficiency.
+* **Capacity:** Using Molicel P42A 21700 cells, each cell holds 4200mAh. In a 2P configuration, the total pack capacity is **8400mAh**. 
+* **Discharge Rating:** A single Molicel P42A cell has a continuous discharge rating of 45A. Because the pack is wired in 2P, the maximum continuous discharge is **90 Amps**. This provides an incredibly safe electrical buffer, easily covering the combined hover current of the motors without causing voltage sag.
+* **Total Power Calculation:** * Nominal Voltage: 22.2V
+  * Capacity: 8.4 Ah
+  * Total Energy: **~186.4 Watt-hours (Wh)**
+  * *Reasoning:* At an estimated cruising draw of 30-40 Amps, this 186Wh reserve provides ample flight time to easily clear the 30-hectare grid without requiring a mid-mission battery swap. Still leaving room for adding more components on to the drone.
