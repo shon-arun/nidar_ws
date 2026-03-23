@@ -75,3 +75,28 @@ To effectively map the 30-hectare area, the drone will execute an automated **la
   * Capacity: 8.4 Ah
   * Total Energy: **~186.4 Watt-hours (Wh)**
   * *Reasoning:* At an estimated cruising draw of 30-40 Amps, this 186Wh reserve provides ample flight time to easily clear the 30-hectare grid without requiring a mid-mission battery swap. Still leaving room for adding more components on to the drone.
+ 
+## Flight Time Estimation
+Based on our previous hardware selections, we can calculate the exact mission endurance. 
+
+* **Battery Capacity:** 8.4 Ah (from the 6S2P 8400mAh Li-Ion pack)
+* **Estimated Cruising Current Draw:** ~18 Amps (total draw for four Tornado T5 3115 motors cruising at 6 m/s with 9050 props and payload)
+
+**Formula:**
+`Flight time (hours) = (Battery capacity × 0.8) / current draw`
+
+**Calculation:**
+* **Usable Capacity:** 8.4 Ah × 0.8 = 6.72 Ah
+* **Flight Time (hours):** 6.72 Ah / 18 A ≈ 0.373 hours
+* **Flight Time (minutes):** 0.373 hours × 60 = **~22.4 minutes**
+
+### Verification: Can 30 Hectares be Scanned in One Flight?
+
+**Conclusion: Yes.**
+
+**The Math (Photogrammetry Flight Plan):**
+* **Total Area:** 30 hectares = 300,000 m².
+* **Camera Swath Width:** Flying at a 50m altitude with the Pi Cam V3 Wide (120° FOV), the camera captures a massive footprint. Factoring in a 60% side-overlap, the effective distance between parallel flight lines (track spacing) is roughly 60 meters.
+* **Speed & Coverage:** Cruising at a conservative 6 m/s, the drone covers 360 square meters per second (6m × 60m).
+* **Grid Scan Time:** 300,000 m² / 360 m²/s = 833 seconds (~13.9 minutes).
+* **Final Analysis:** Factoring in 2 to 3 minutes (probably) for takeoff, landing, and turns between grid lines, the total mission duration is roughly **17 minutes**. With a calculated flight time of **22.4 minutes**, the drone can complete the scan with over 5 minutes of emergency reserve power remaining.
