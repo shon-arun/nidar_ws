@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'camera_viewer_node = opsg_perception.camera_viewer_node:main'
+            'camera_viewer_node = opsg_perception.camera_viewer_node:main',
+            'yolo_detection_node = opsg_perception.yolo_detection_node:main'
         ],
     },
 )
