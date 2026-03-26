@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'camera_viewer_node = opsg_perception.camera_viewer_node:main'
         ],
     },
 )
