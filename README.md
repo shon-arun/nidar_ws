@@ -107,9 +107,9 @@ PX4 uses internal `uORB` messaging, while ROS 2 uses `DDS`. The Micro XRCE-DDS A
   * ✅ Trajectory following videos for square, triangle, figure 8
 
 * **Task 8 - Camera Sensor Integration**
-  * ⬜ Subscribe to the `/camera/image_raw` topic
-  * ⬜ Convert the ROS image to OpenCV format using `cv_bridge`
-  * ⬜ Display the live feed using OpenCV (Deliverable: Camera stream visible)
+  * ✅ Subscribe to the `/camera/image_raw` topic
+  * ✅ Convert the ROS image to OpenCV format using `cv_bridge`
+  * ✅ Display the live feed using OpenCV (Deliverable: Camera stream visible)
 
 * **Task 9 - Human Detection (YOLO)**
   * ⬜ Load a pretrained YOLO model to process the camera feed (`camera -> YOLO -> bounding boxes`)
