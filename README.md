@@ -21,9 +21,15 @@ nidar_ws/
 │   ├── opsg_mission/    # High-level multi-drone spawning, autonomous workflow, and independent control
 │   ├── opsg_interfaces/ # Custom ROS2 messages, services, and actions for inter-drone communication
 │   └── opsg_description/# URDF models, 3D meshes, and Gazebo simulation environments
+│       ├── config/      # Simulation parameters and environment settings
+│       ├── launch/      # ROS 2 launch files (e.g., spawn_scout.launch.py)
 │       ├── meshes/      # 3D mesh files (.stl) categorized by drone (e.g., scout_drone/)
+│       ├── models/      # Gazebo SDF models and plugin definitions
+│       ├── scripts/     # Bash scripts for SITL and XRCE-DDS Agent startup
 │       └── urdf/        # Unified Robot Description Format files (e.g., scout_drone.urdf)
+├── videos/              # Flight test recordings, simulation captures, and demonstration media
 ├── .gitignore           # Git ignore configurations
+├── .gitmodules          # Git submodules (tracks PX4-Autopilot)
 └── README.md            # Project documentation
 ```
 
@@ -67,6 +73,20 @@ PX4 uses internal `uORB` messaging, while ROS 2 uses `DDS`. The Micro XRCE-DDS A
   sudo ldconfig /usr/local/lib/
   ```
 * **The Autonomy Dictionary (`px4_msgs`):** While not required to fly manually in Gazebo, you must clone `px4_msgs` into your ROS 2 `src/` directory to write autonomous nodes. Ensure the branch matches your PX4 version, then run `colcon build` so ROS 2 can generate the translation headers.
+
+### 5. Machine Vision & AI (Perception Stack)
+To run the camera feeds and object detection nodes, you need the OpenCV bridge and the YOLO neural network libraries.
+* **Install the ROS 2 Vision Bridges:**
+  ```bash
+  sudo apt install ros-jazzy-cv-bridge ros-jazzy-vision-opencv
+  ```
+* **Install Ultralytics (YOLOv8):** Due to strict PEP 668 environment restrictions in Ubuntu 24.04, the AI libraries must be installed in a virtual environment that retains access to the global ROS 2 workspace.
+  ```bash
+  python3 -m venv ~/yolo_venv --system-site-packages
+  source ~/yolo_venv/bin/activate
+  pip install ultralytics
+  ```
+  *(Note: You must run `source ~/yolo_venv/bin/activate` in your terminal before launching any nodes in the `opsg_perception` package).*
 
 ## Build Instructions
 1. Clone this repository.
